@@ -3,484 +3,872 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grigoletti Mídias — Performance Digital</title>
-<meta name="description" content="Gestão de tráfego, rastreamento avançado e design de anúncios. +100 clientes atendidos. R$350M em vendas com origem online.">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MFQSKMC4');</script>
+<title>Proposta Comercial — Grigoletti Mídias</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{
-  --orange:#E07832;--orange-v:#F08030;--orange-pale:rgba(224,120,50,0.12);
-  --navy:#192638;--navy-mid:#1E2F45;--navy-light:#243548;
-  --cream:#F9F7F4;--white:#fff;--muted:#6B6B6B;--green:#25D366;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Montserrat',sans-serif;background:#141e2d;color:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  :root {
+    --orange: #E07832;
+    --orange-vivid: #F08030;
+    --orange-pale: rgba(224,120,50,0.12);
+    --navy: #192638;
+    --navy-mid: #243548;
+    --cream: #F9F7F4;
+    --stone: #EEEBE6;
+    --white: #FFFFFF;
+    --text: #1A1A1A;
+    --muted: #666;
+    --border: rgba(224,120,50,0.18);
+  }
 
-/* WA FLOAT */
-.wa-float{position:fixed;bottom:24px;right:24px;width:54px;height:54px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);z-index:999;text-decoration:none;animation:waPop .5s ease 1.5s both;transition:transform .2s}
-.wa-float:hover{transform:scale(1.08)}
-.wa-float svg{width:26px;height:26px;fill:white}
-@keyframes waPop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
 
-/* HERO */
-.hero{min-height:100svh;background:radial-gradient(ellipse 80% 60% at 70% -10%,rgba(224,120,50,.12) 0%,transparent 60%),linear-gradient(175deg,#1f3249 0%,#192638 40%,#141e2d 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 28px 80px;position:relative;overflow:hidden}
-.hero-ring{position:absolute;border-radius:50%;border:1px solid rgba(224,120,50,.07);animation:ringPulse 7s ease-in-out infinite;pointer-events:none}
-.hero-ring:nth-child(1){width:500px;height:500px;top:-140px;right:-160px}
-.hero-ring:nth-child(2){width:300px;height:300px;top:20px;right:-30px;animation-delay:2s;border-color:rgba(224,120,50,.04)}
-.hero-ring:nth-child(3){width:360px;height:360px;bottom:-100px;left:-100px;animation-delay:4s}
-@keyframes ringPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:.5}}
-.hero-inner{position:relative;z-index:1;max-width:520px;width:100%}
-.hero-logo{font-size:11px;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--orange);margin-bottom:36px;opacity:0;animation:fadeUp .7s ease .1s forwards}
-.hero-logo .midias{color:var(--white);font-weight:300}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:9px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--orange);border:1px solid rgba(224,120,50,.3);padding:6px 16px;border-radius:100px;margin-bottom:28px;opacity:0;animation:fadeUp .7s ease .2s forwards}
-.hero-badge::before{content:'';width:6px;height:6px;background:var(--orange);border-radius:50%;animation:blink 2s ease infinite}
-.hero-h1{font-size:clamp(2.2rem,8vw,3.8rem);font-weight:900;line-height:1.05;letter-spacing:-.025em;color:var(--white);text-transform:uppercase;margin-bottom:20px;opacity:0;animation:fadeUp .8s ease .3s forwards}
-.hero-h2{font-size:clamp(.9rem,3.5vw,1.15rem);font-weight:300;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:44px;opacity:0;animation:fadeUp .8s ease .45s forwards}
-.hero-h2 span{color:rgba(255,255,255,.85);font-weight:500}
-.hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-bottom:44px;background:rgba(255,255,255,.04);opacity:0;animation:fadeUp .8s ease .6s forwards}
-.hstat{padding:20px 14px;text-align:center;background:rgba(255,255,255,.02)}
-.hstat-num{font-size:clamp(1.2rem,5vw,1.7rem);font-weight:900;color:var(--orange-v);letter-spacing:-.02em;line-height:1;margin-bottom:5px}
-.hstat-label{font-size:8px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3)}
-.hero-ctas{display:flex;flex-direction:column;gap:12px;width:100%;opacity:0;animation:fadeUp .8s ease .75s forwards}
-.btn-primary{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:var(--white);font-size:13px;font-weight:700;text-decoration:none;padding:16px 28px;border-radius:4px;transition:opacity .2s,transform .2s}
-.btn-primary:hover{opacity:.92;transform:translateY(-1px)}
-.btn-primary svg{width:18px;height:18px;fill:white;flex-shrink:0}
-.scroll-hint{position:absolute;bottom:24px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0;animation:fadeUp 1s ease 1.2s forwards;z-index:2}
-.scroll-hint span{font-size:8px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.18)}
-.scroll-arrow{width:1px;height:28px;background:linear-gradient(to bottom,rgba(224,120,50,.5),transparent);animation:scrollDown 2s ease-in-out infinite}
-@keyframes scrollDown{0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(.4);opacity:.3}}
+  /* ── COVER ── */
+  .cover {
+    min-height: 100vh;
+    background: var(--navy);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -180px; right: -180px;
+    width: 560px; height: 560px;
+    border-radius: 50%;
+    border: 1px solid rgba(224,120,50,0.10);
+    pointer-events: none;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: 40px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    border: 1px solid rgba(224,120,50,0.07);
+    pointer-events: none;
+  }
 
-/* COMMONS */
-.section-tag{font-size:9px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;text-align:center}
-.section-title{font-size:clamp(1.7rem,6vw,2.6rem);font-weight:900;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;text-align:center;margin-bottom:48px}
+  .cover-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    position: relative;
+    z-index: 1;
+  }
 
-/* FUNNEL SECTION */
-.funnel-section{
-  background:#F9F7F4;
-  background-image:linear-gradient(rgba(25,38,56,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(25,38,56,.045) 1px,transparent 1px),radial-gradient(circle,rgba(224,120,50,.08) 1px,transparent 1px);
-  background-size:40px 40px,40px 40px,40px 40px;
-  background-position:0 0,0 0,20px 20px;
-  padding:80px 28px;
-}
-.funnel-section .section-title{color:var(--navy)}
-.funnel-visual{max-width:560px;margin:0 auto;display:flex;flex-direction:column;align-items:flex-start;gap:3px}
-.frow{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px;border-radius:0 4px 4px 0;transition:width .25s ease,filter .25s ease;cursor:default}
-.frow:nth-child(1){width:100%;background:var(--navy-light)}
-.frow:nth-child(2){width:88%;background:var(--navy-mid)}
-.frow:nth-child(3){width:76%;background:var(--navy-light)}
-.frow:nth-child(4){width:62%;background:var(--navy-mid)}
-.frow:nth-child(5){width:48%;background:var(--navy-mid)}
-.frow:nth-child(1):hover{width:100%;filter:brightness(1.18)}
-.frow:nth-child(2):hover{width:92%;filter:brightness(1.18)}
-.frow:nth-child(3):hover{width:80%;filter:brightness(1.18)}
-.frow:nth-child(4):hover{width:66%;filter:brightness(1.18)}
-.frow:nth-child(5):hover{width:52%;filter:brightness(1.18)}
-.frow-left{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
-.frow-step{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);flex-shrink:0;width:20px}
-.frow-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--white)}
-.frow:nth-child(5) .frow-label{color:#4ade80}
-.frow-desc{font-size:10.5px;font-weight:300;color:rgba(255,255,255,.45);margin-top:2px}
-.frow-right{text-align:right;flex-shrink:0;min-width:56px}
-.frow-num{font-size:1rem;font-weight:900;color:var(--orange-v);letter-spacing:-.02em;line-height:1}
-.frow:nth-child(5) .frow-num{color:#4ade80}
-.frow-lbl{font-size:7.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:2px}
+  .cover-bar {
+    width: 44px; height: 3px;
+    background: var(--orange);
+    margin-bottom: 48px;
+    animation: growBar 0.9s ease forwards;
+  }
 
-/* DASHBOARD */
-.dashboard-section{background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(36,53,72,1) 0%,#1a2c40 50%,#161f2e 100%);padding:80px 28px}
-.dashboard-section .section-title{color:var(--white)}
-.dash-wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
-.dash-card{background:var(--navy-light);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:20px}
-.dash-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.dash-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4)}
-.dash-live{display:flex;align-items:center;gap:5px;font-size:8.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange)}
-.dash-live::before{content:'';width:5px;height:5px;background:var(--orange);border-radius:50%;animation:blink 1.5s ease infinite}
-.dash-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.dash-kpi{background:rgba(255,255,255,.04);border-radius:4px;padding:12px 10px;text-align:center}
-.dash-kpi-num{font-size:1.1rem;font-weight:900;color:var(--orange-v);letter-spacing:-.02em;line-height:1;margin-bottom:4px}
-.dash-kpi-num.good{color:#4ade80}
-.dash-kpi-num.warn{color:#facc15}
-.dash-kpi-label{font-size:7.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.28)}
-.dash-bars{display:flex;align-items:flex-end;gap:4px;height:70px;margin-bottom:14px}
-.dash-bar{flex:1;background:rgba(224,120,50,.2);border-radius:2px 2px 0 0;transition:background .2s}
-.dash-bar:hover{background:rgba(224,120,50,.45)}
-.dash-bar.hi{background:var(--orange)}
-.dash-funnel{display:flex;flex-direction:column;gap:8px}
-.dash-funnel-row{display:flex;align-items:center;gap:10px}
-.dash-funnel-lbl{font-size:9px;font-weight:600;color:rgba(255,255,255,.38);width:68px;flex-shrink:0;text-transform:uppercase;letter-spacing:.05em}
-.dash-funnel-track{flex:1;height:7px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden}
-.dash-funnel-bar{height:100%;border-radius:4px;background:var(--orange)}
-.dash-funnel-val{font-size:9px;font-weight:700;color:var(--orange-v);width:32px;text-align:right;flex-shrink:0}
-.ads-table{width:100%;border-collapse:collapse;table-layout:fixed}
-.ads-table thead tr{border-bottom:1px solid rgba(255,255,255,.07)}
-.ads-table th{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);padding:6px 6px;text-align:left}
-.ads-table th:not(:first-child){text-align:center}
-.ads-table tbody tr{border-bottom:1px solid rgba(255,255,255,.04);transition:background .15s}
-.ads-table tbody tr:hover{background:rgba(255,255,255,.03)}
-.ads-table td{font-size:11px;font-weight:400;color:rgba(255,255,255,.7);padding:10px 6px;vertical-align:middle}
-.ads-table td:not(:first-child){text-align:center;font-weight:600}
-.ad-name{display:flex;align-items:center;gap:8px}
-.ad-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.ad-dot.a{background:#F08030}.ad-dot.b{background:#4ade80}.ad-dot.c{background:#facc15}.ad-dot.d{background:#60a5fa}
-.ad-sub{font-size:9px;font-weight:400;color:rgba(255,255,255,.35);margin-top:1px}
-.badge-status{font-size:7.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:100px;display:inline-block;white-space:nowrap}
-.badge-on{background:rgba(74,222,128,.15);color:#4ade80}
-.badge-off{background:rgba(255,255,255,.08);color:rgba(255,255,255,.35)}
-.val-good{color:#4ade80!important}
-.val-warn{color:#facc15!important}
+  .cover-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.2s forwards;
+  }
 
-/* SERVICES */
-.services{background:radial-gradient(ellipse 70% 50% at 0% 100%,rgba(224,120,50,.07) 0%,transparent 60%),linear-gradient(160deg,#192638 0%,#141e2d 60%,#1a2a3e 100%);padding:80px 28px}
-.services .section-title{color:var(--white)}
-.svc-list{display:flex;flex-direction:column;gap:2px;max-width:560px;margin:0 auto}
-.svc-item{display:flex;align-items:center;gap:18px;background:rgba(255,255,255,.04);padding:22px 24px;border-left:3px solid transparent;transition:border-color .2s,background .2s}
-.svc-item:hover{border-left-color:var(--orange);background:rgba(255,255,255,.07)}
-.svc-ico{width:40px;height:40px;background:rgba(224,120,50,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.svc-ico svg{width:17px;height:17px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.svc-text strong{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--white);margin-bottom:3px}
-.svc-text span{font-size:12px;font-weight:300;color:rgba(255,255,255,.5);line-height:1.65}
+  .cover-h1 {
+    opacity: 0;
+    animation: fadeUp 0.9s ease 0.35s forwards;
+    margin-bottom: 48px;
+  }
 
-/* RESULTS */
-.results{background:linear-gradient(140deg,#B85510 0%,var(--orange) 60%,#F08A40 100%);padding:80px 28px;text-align:center}
-.results .section-tag{color:rgba(255,255,255,.5)}
-.results .section-title{color:var(--white)}
-.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;max-width:560px;margin:0 auto}
-.rcard{background:rgba(255,255,255,.13);padding:36px 20px}
-.rcard-num{font-size:clamp(1.6rem,6vw,2.2rem);font-weight:900;color:var(--white);line-height:1;margin-bottom:8px;letter-spacing:-.02em}
-.rcard-label{font-size:8.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+  /* LINE 1: Performance Digital — bold/heavy, sized down for balance */
+  .cover-h1 .l1 {
+    display: block;
+    font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    text-transform: uppercase;
+  }
 
-/* SUPPORT */
-.support{
-  background:#F9F7F4;
-  background-image:linear-gradient(rgba(25,38,56,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(25,38,56,.045) 1px,transparent 1px),radial-gradient(circle,rgba(224,120,50,.08) 1px,transparent 1px);
-  background-size:40px 40px,40px 40px,40px 40px;
-  background-position:0 0,0 0,20px 20px;
-  padding:80px 28px;
-}
-.support .section-title{color:var(--navy)}
-.support-grid{display:flex;flex-direction:column;gap:2px;max-width:560px;margin:0 auto}
-.support-item{display:flex;align-items:flex-start;gap:16px;padding:22px 24px;background:var(--white);border-top:2px solid transparent;transition:border-color .2s}
-.support-item:hover{border-top-color:var(--orange)}
-.support-ico{width:40px;height:40px;border-radius:50%;background:rgba(224,120,50,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.support-ico svg{width:17px;height:17px;stroke:var(--orange);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.support-text strong{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--navy);margin-bottom:4px}
-.support-text span{font-size:12px;font-weight:300;color:var(--muted);line-height:1.7}
+  /* LINE 2: Para o Mercado Imobiliário — proportional to line 1 */
+  .cover-h1 .l2 {
+    display: block;
+    font-size: clamp(1.1rem, 2.5vw, 1.85rem);
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 0.01em;
+    margin-top: 14px;
+    line-height: 1.35;
+  }
 
-/* CONTACT */
-.contact{background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(224,120,50,.09) 0%,transparent 55%),linear-gradient(180deg,#1f3249 0%,#192638 35%,#141e2d 100%);padding:80px 28px;text-align:center}
-.contact .section-title{color:var(--white);margin-bottom:12px}
-.contact-sub{font-size:13px;font-weight:300;color:rgba(255,255,255,.45);line-height:1.8;max-width:380px;margin:0 auto 40px}
-.contact-btns{display:flex;flex-direction:column;gap:12px;max-width:400px;margin:0 auto}
-.btn-secondary{display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);color:rgba(255,255,255,.75);font-size:13px;font-weight:500;text-decoration:none;padding:16px 28px;border-radius:4px;border:1px solid rgba(255,255,255,.1);transition:background .2s}
-.btn-secondary:hover{background:rgba(255,255,255,.1)}
+  .cover-h1 .l2 .hl {
+    color: var(--orange);
+    font-weight: 600;
+  }
 
-/* FOOTER */
-footer{background:#0F1820;padding:28px;text-align:center}
-.footer-logo{font-size:11px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
-.footer-logo .midias{color:rgba(255,255,255,.35);font-weight:300}
-footer p{font-size:9px;letter-spacing:.12em;color:rgba(255,255,255,.15);text-transform:uppercase}
+  .cover-sub {
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.28);
+    opacity: 0;
+    animation: fadeUp 0.9s ease 0.5s forwards;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .cover-sub::before {
+    content: '';
+    display: inline-block;
+    width: 28px; height: 1px;
+    background: rgba(255,255,255,0.2);
+  }
 
-/* SCROLL REVEAL */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-.reveal:nth-child(2){transition-delay:.1s}
-.reveal:nth-child(3){transition-delay:.2s}
-.reveal:nth-child(4){transition-delay:.3s}
-.reveal:nth-child(5){transition-delay:.4s}
+  .cover-footer {
+    padding: 28px 80px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.7s forwards;
+  }
 
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  .cover-logo {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+  .cover-logo .midias { color: var(--white); font-weight: 300; }
+  .cover-year { font-size: 11px; letter-spacing: 0.2em; color: rgba(255,255,255,0.18); }
 
-/* RESPONSIVE */
-@media(min-width:600px){
-  .hero-stats{grid-template-columns:repeat(4,1fr)}
-  .results-grid{grid-template-columns:repeat(4,1fr);max-width:800px}
-}
-@media(min-width:800px){
-  .hero{padding:80px 40px}
-  .hero-inner,.funnel-visual,.dash-wrap,.svc-list,.support-grid,.contact-btns{max-width:620px}
-}
-@media(max-width:500px){
-  /* funnel - mostrar desc nas 3 primeiras, esconder nas 2 últimas */
-  .frow{padding:11px 12px;gap:8px}
-  .frow-lbl{display:none}
-  .frow-num{font-size:.9rem}
-  .frow-label{font-size:10.5px}
-  .frow-step{width:14px;font-size:8px}
-  .frow:nth-child(4) .frow-desc,
-  .frow:nth-child(5) .frow-desc{display:none}
-  .frow:nth-child(1){width:100%}
-  .frow:nth-child(2){width:85%}
-  .frow:nth-child(3){width:70%}
-  .frow:nth-child(4){width:55%}
-  .frow:nth-child(5){width:40%}
-  /* ads table */
-  .ads-table th,.ads-table td{padding:7px 3px;font-size:9px}
-  .badge-status{font-size:7px;padding:2px 5px;letter-spacing:0}
-  .ad-sub{display:none}
-}
+  /* ── COMMONS ── */
+  .section { padding: 96px 80px; max-width: 1120px; margin: 0 auto; }
+
+  .section-label {
+    font-size: 9.5px; font-weight: 700;
+    letter-spacing: 0.35em; text-transform: uppercase;
+    color: var(--orange); margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    font-weight: 800; color: var(--navy);
+    line-height: 1.15; margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+
+  .section-body {
+    font-size: 14.5px; font-weight: 300;
+    color: var(--muted); max-width: 560px; line-height: 1.9;
+  }
+
+  .hairline { width: calc(100% - 160px); height: 1px; background: var(--border); margin: 0 auto; }
+
+  /* ── CLIENT SECTION ── */
+  .client-wrap { background: var(--white); }
+  .client-inner {
+    max-width: 1120px; margin: 0 auto;
+    padding: 96px 80px;
+  }
+  .client-inner .section-label { color: var(--orange); }
+  .client-inner .section-title { color: var(--navy); }
+
+  .client-intro {
+    font-size: 14.5px; font-weight: 300;
+    color: var(--muted); line-height: 1.9;
+    max-width: 780px; margin-bottom: 56px;
+  }
+
+  /* Manifesto strip */
+  .manifesto-strip {
+    background: var(--navy);
+    padding: 48px 52px;
+    margin-bottom: 2px;
+  }
+  .manifesto-strip-label {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.35em;
+    text-transform: uppercase; color: var(--orange); margin-bottom: 20px;
+  }
+  .manifesto-strip p {
+    font-size: 14px; font-weight: 300;
+    color: rgba(255,255,255,0.80); line-height: 1.9; max-width: 700px;
+  }
+
+  /* Values grid */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: var(--stone);
+    margin-bottom: 2px;
+  }
+
+  .value-card {
+    background: var(--cream);
+    padding: 32px 28px;
+    border-top: 2px solid transparent;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .value-card:hover { border-color: var(--orange); background: var(--white); }
+
+  .value-card h4 {
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--navy); margin-bottom: 10px;
+  }
+  .value-card p {
+    font-size: 12.5px; font-weight: 300;
+    color: var(--muted); line-height: 1.8;
+  }
+
+  /* Empreendimentos */
+  .emp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: var(--stone);
+    margin-top: 52px;
+  }
+
+  .emp-card {
+    background: var(--white);
+    padding: 28px 24px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .emp-card:hover { border-bottom-color: var(--orange); }
+
+  .emp-name {
+    font-size: 11.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--navy); line-height: 1.35; margin-bottom: 6px;
+  }
+  .emp-sub {
+    font-size: 10px; font-weight: 400;
+    color: var(--muted); letter-spacing: 0.03em; margin-bottom: 12px;
+  }
+  .emp-badge {
+    display: inline-block;
+    font-size: 8.5px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 2px;
+  }
+  .emp-badge.active { background: rgba(224,120,50,0.12); color: var(--orange); }
+  .emp-badge.entregue { background: rgba(25,38,56,0.08); color: var(--navy); }
+  .emp-badge.vendido { background: rgba(0,0,0,0.06); color: #888; }
+
+  /* Stats row */
+  .client-stat-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-top: 2px;
+    background: var(--stone);
+  }
+
+  .client-stat {
+    background: var(--navy);
+    padding: 36px;
+    text-align: center;
+  }
+
+  .client-stat-num {
+    font-size: 2rem; font-weight: 900;
+    color: var(--orange-vivid);
+    line-height: 1; margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+  .client-stat-label {
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+  }
+
+  /* ── INTRO ── */
+  .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 52px; }
+
+  .intro-card {
+    background: var(--white); padding: 36px 32px;
+    border-top: 3px solid var(--orange);
+    box-shadow: 0 1px 20px rgba(0,0,0,0.04);
+  }
+
+  .intro-card h3 { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--navy); margin-bottom: 10px; }
+  .intro-card p { font-size: 13.5px; font-weight: 300; color: var(--muted); line-height: 1.85; }
+
+  /* ── SERVICES (dark) ── */
+  .services-wrap { background: var(--navy); }
+  .services-inner { max-width: 1120px; margin: 0 auto; padding: 96px 80px; }
+  .services-inner .section-title { color: var(--white); }
+  /* FIX 1 applied here too */
+  .services-inner .section-body { color: rgba(255,255,255,0.70); }
+
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 2px; margin-top: 52px;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .svc {
+    background: var(--navy); padding: 40px 30px;
+    display: flex; flex-direction: column;
+    transition: background 0.25s;
+  }
+  .svc:hover { background: var(--navy-mid); }
+
+  /* FIX 2: vivid orange numbers on service cards */
+  .svc-num {
+    font-size: 2.8rem; font-weight: 900;
+    color: var(--orange-vivid);
+    opacity: 0.55;
+    line-height: 1; margin-bottom: 16px; letter-spacing: -0.03em;
+  }
+
+  .svc-icon {
+    width: 40px; height: 40px; background: var(--orange-pale);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px;
+  }
+  .svc-icon svg { width: 18px; height: 18px; stroke: var(--orange); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  .svc h3 { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--white); margin-bottom: 12px; line-height: 1.4; }
+
+  /* FIX 1: white readable text on dark */
+  .svc p { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.75); line-height: 1.9; flex: 1; }
+
+  .svc-tag { display: block; margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(224,120,50,0.25); font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--orange); font-weight: 600; }
+
+  /* ── NOT INCLUDED ── */
+  .not-included {
+    background: var(--stone); padding: 40px 80px;
+    max-width: 1120px; margin: 0 auto;
+    display: flex; align-items: center; gap: 40px;
+    border-top: 1px solid rgba(0,0,0,0.07);
+  }
+  .ni-badge { flex-shrink: 0; background: rgba(0,0,0,0.07); padding: 7px 14px; font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted); font-weight: 600; border-radius: 2px; }
+  .ni-text { font-size: 13.5px; font-weight: 300; color: var(--muted); }
+  .ni-text strong { color: var(--text); font-weight: 600; }
+
+  /* ── METHODOLOGY ── */
+  .method-steps { margin-top: 56px; display: flex; flex-direction: column; }
+
+  .mstep {
+    display: grid; grid-template-columns: 52px 44px 1fr;
+    gap: 0 24px; align-items: start;
+    padding: 36px 0; border-bottom: 1px solid var(--border);
+  }
+  .mstep:last-child { border-bottom: none; }
+
+  .mstep-num { font-size: 1.4rem; font-weight: 900; color: var(--orange-vivid); padding-top: 4px; letter-spacing: -0.02em; }
+
+  .mstep-icon {
+    width: 40px; height: 40px; background: var(--orange-pale);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;
+  }
+  .mstep-icon svg { width: 17px; height: 17px; stroke: var(--orange); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+  .mstep-content h4 { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--navy); margin-bottom: 8px; line-height: 1.35; }
+  .mstep-content p { font-size: 13.5px; font-weight: 300; color: var(--muted); line-height: 1.9; max-width: 580px; }
+
+  /* ── RESULTS (orange bg) ── */
+  .results-wrap { background: linear-gradient(140deg, #B85510 0%, var(--orange) 55%, #F08A40 100%); padding: 96px 0; }
+  .results-inner { max-width: 1120px; margin: 0 auto; padding: 0 80px; }
+  .results-inner .section-label { color: rgba(255,255,255,0.55); }
+  .results-inner .section-title { color: var(--white); }
+  .results-inner .section-body { color: rgba(255,255,255,0.75); }
+
+  .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 52px; }
+
+  .rcard { background: rgba(255,255,255,0.14); backdrop-filter: blur(4px); padding: 48px 32px; text-align: center; }
+  .rcard-num { font-size: clamp(2rem, 3.8vw, 3.2rem); font-weight: 900; color: var(--white); line-height: 1; margin-bottom: 10px; letter-spacing: -0.02em; }
+  .rcard-label { font-size: 9.5px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.65); font-weight: 600; }
+
+  /* ── INVESTMENT ── */
+  .invest-wrap { background: var(--white); padding: 96px 80px; max-width: 1120px; margin: 0 auto; }
+  .invest-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 52px; align-items: start; }
+
+  .invest-card { background: var(--navy); padding: 52px 44px; position: relative; overflow: hidden; }
+  .invest-card::before { content: ''; position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; border-radius: 50%; border: 1px solid rgba(224,120,50,0.10); }
+
+  .invest-card-label { font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 16px; font-weight: 600; }
+
+  /* FIX 1: invest value stays white/vivid */
+  .invest-card-value { font-size: 3.2rem; font-weight: 900; color: var(--white); line-height: 1; margin-bottom: 6px; letter-spacing: -0.02em; }
+  .invest-card-sub { font-size: 12px; font-weight: 300; color: rgba(255,255,255,0.40); margin-bottom: 32px; letter-spacing: 0.04em; }
+  .invest-divider { width: 36px; height: 2px; background: var(--orange); margin-bottom: 28px; }
+
+  .invest-includes { list-style: none; }
+  /* FIX 1: white list text, not grey muted */
+  .invest-includes li { font-size: 12.5px; font-weight: 300; color: rgba(255,255,255,0.80); padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.07); display: flex; align-items: center; gap: 10px; }
+  .invest-includes li::before { content: ''; width: 4px; height: 4px; background: var(--orange-vivid); border-radius: 50%; flex-shrink: 0; }
+
+  .invest-support { display: flex; flex-direction: column; gap: 14px; }
+
+  .support-label { font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--navy); margin-bottom: 4px; }
+  .support-desc { font-size: 13px; font-weight: 300; color: var(--muted); margin-bottom: 18px; line-height: 1.85; }
+
+  .support-item { display: flex; align-items: flex-start; gap: 16px; padding: 20px; border: 1px solid var(--border); background: var(--cream); }
+  .support-icon { width: 38px; height: 38px; border-radius: 50%; background: var(--orange-pale); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .support-icon svg { width: 16px; height: 16px; stroke: var(--orange); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+  .support-text strong { display: block; font-size: 12px; font-weight: 700; color: var(--navy); margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .support-text span { font-size: 12px; font-weight: 300; color: var(--muted); line-height: 1.65; }
+
+  /* ── CLOSING ── */
+  .closing-wrap { background: var(--navy); padding: 96px 80px; }
+  .closing-inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .closing-inner .section-title { color: var(--white); }
+  /* FIX 1: closing body text readable */
+  .closing-inner .section-body { color: rgba(255,255,255,0.75); }
+
+  .contact-items { display: flex; flex-direction: column; gap: 12px; }
+  .contact-item { display: flex; align-items: center; gap: 16px; padding: 18px 22px; border: 1px solid rgba(224,120,50,0.2); background: rgba(255,255,255,0.04); transition: background 0.2s; }
+  .contact-item:hover { background: rgba(255,255,255,0.08); }
+  .contact-ico { width: 36px; height: 36px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .contact-ico svg { width: 14px; height: 14px; stroke: white; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  /* FIX 1: contact text white */
+  .contact-item span { font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.85); }
+
+  /* ── FOOTER ── */
+  footer { background: #111C28; padding: 30px 80px; display: flex; align-items: center; justify-content: space-between; }
+  .footer-logo { font-size: 12px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--orange); }
+  .footer-logo .midias { color: rgba(255,255,255,0.5); font-weight: 300; }
+  footer p { font-size: 9.5px; letter-spacing: 0.12em; color: rgba(255,255,255,0.18); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes growBar { from { width: 0; } to { width: 44px; } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 800px) {
+    .cover-inner, .cover-footer { padding: 48px 28px; }
+    .section { padding: 64px 28px; }
+    .hairline { width: calc(100% - 56px); }
+    .intro-grid { grid-template-columns: 1fr; }
+
+    /* ── Cavazani section mobile ── */
+    .client-inner { padding: 64px 28px; overflow: hidden; }
+    .client-intro { font-size: 13.5px; }
+    .manifesto-strip { padding: 32px 24px; }
+    .values-grid { grid-template-columns: 1fr 1fr; }
+    .emp-grid { grid-template-columns: 1fr 1fr; }
+    .client-stat-row { grid-template-columns: 1fr 1fr; }
+
+    .services-inner { padding: 64px 28px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .not-included { flex-direction: column; align-items: flex-start; gap: 12px; padding: 32px 28px; }
+    .results-inner { padding: 0 28px; }
+    .results-grid { grid-template-columns: 1fr; }
+    .invest-wrap { padding: 64px 28px; }
+    .invest-grid { grid-template-columns: 1fr; gap: 28px; }
+    .closing-wrap { padding: 64px 28px; }
+    .closing-inner { grid-template-columns: 1fr; gap: 40px; }
+    footer { flex-direction: column; gap: 10px; padding: 24px 28px; text-align: center; }
+    .mstep { grid-template-columns: 44px 40px 1fr; gap: 0 14px; }
+  }
+
+  @media (max-width: 480px) {
+    .values-grid { grid-template-columns: 1fr; }
+    .emp-grid { grid-template-columns: 1fr; }
+    .client-stat-row { grid-template-columns: 1fr; }
+    .cover-h1 .l1 { font-size: 2rem; }
+    .cover-h1 .l2 { font-size: 1rem; }
+  }
 </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFQSKMC4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- progress bar -->
-<div id="pgbar" style="position:fixed;top:0;left:0;height:2px;background:var(--orange);width:0%;z-index:9999;transition:width .1s linear;"></div>
-
-<!-- WA float -->
-<a class="wa-float" href="https://wa.me/5553991750788" target="_blank" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12.001 2C6.478 2 2 6.478 2 12.001c0 1.788.475 3.47 1.302 4.924L2 22l5.232-1.278A9.947 9.947 0 0012.001 22C17.523 22 22 17.522 22 12.001 22 6.478 17.523 2 12.001 2zm4.994 13.986c-.214.601-1.246 1.147-1.714 1.196-.424.044-.96.063-1.549-.097-.358-.1-.817-.234-1.401-.457-2.458-.961-4.059-3.405-4.184-3.563-.122-.158-.991-1.316-.991-2.509 0-1.194.625-1.782.846-2.026.222-.244.483-.304.644-.304.16 0 .322.001.464.008.148.007.348-.056.545.416.203.486.689 1.677.749 1.8.061.123.1.267.02.43-.08.162-.122.263-.241.405-.12.142-.252.317-.359.424-.12.119-.245.25-.105.49.14.242.622 1.027 1.335 1.664.917.817 1.69 1.069 1.932 1.19.242.12.383.1.524-.06.142-.162.609-.71.77-.954.162-.243.325-.202.547-.122.222.08 1.41.666 1.652.787.243.122.402.182.463.283.06.102.06.588-.154 1.189z"/></svg>
-</a>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-ring"></div><div class="hero-ring"></div><div class="hero-ring"></div>
-  <canvas id="particles-canvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.5;"></canvas>
-  <div class="hero-inner">
-    <div class="hero-logo">GRIGOLETTI <span class="midias">MÍDIAS</span></div>
-    <div class="hero-badge">Performance Digital</div>
-    <h1 class="hero-h1">Dados que<br>geram vendas.</h1>
-    <p class="hero-h2">Gestão de tráfego, rastreamento avançado e criação de anúncios para <span>empresas que querem resultados de verdade.</span></p>
-    <div class="hero-stats">
-      <div class="hstat"><div class="hstat-num">+100k</div><div class="hstat-label">Leads gerados</div></div>
-      <div class="hstat"><div class="hstat-num">+R$10M</div><div class="hstat-label">Gerenciados</div></div>
-      <div class="hstat"><div class="hstat-num">R$350M</div><div class="hstat-label">Em vendas online</div></div>
-      <div class="hstat"><div class="hstat-num">+100</div><div class="hstat-label">Clientes atendidos</div></div>
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-bar"></div>
+    <p class="cover-tag">Proposta Comercial · 2026</p>
+    <div class="cover-h1">
+      <span class="l1">Performance Digital</span>
+      <span class="l2">Para o Mercado <span class="hl">Imobiliário</span></span>
     </div>
-    <div class="hero-ctas">
-      <a class="btn-primary" href="https://wa.me/5553991750788" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M12.001 2C6.478 2 2 6.478 2 12.001c0 1.788.475 3.47 1.302 4.924L2 22l5.232-1.278A9.947 9.947 0 0012.001 22C17.523 22 22 17.522 22 12.001 22 6.478 17.523 2 12.001 2zm4.994 13.986c-.214.601-1.246 1.147-1.714 1.196-.424.044-.96.063-1.549-.097-.358-.1-.817-.234-1.401-.457-2.458-.961-4.059-3.405-4.184-3.563-.122-.158-.991-1.316-.991-2.509 0-1.194.625-1.782.846-2.026.222-.244.483-.304.644-.304.16 0 .322.001.464.008.148.007.348-.056.545.416.203.486.689 1.677.749 1.8.061.123.1.267.02.43-.08.162-.122.263-.241.405-.12.142-.252.317-.359.424-.12.119-.245.25-.105.49.14.242.622 1.027 1.335 1.664.917.817 1.69 1.069 1.932 1.19.242.12.383.1.524-.06.142-.162.609-.71.77-.954.162-.243.325-.202.547-.122.222.08 1.41.666 1.652.787.243.122.402.182.463.283.06.102.06.588-.154 1.189z"/></svg>
-        Falar no WhatsApp
-      </a>
-    </div>
+    <p class="cover-sub">Tráfego · Social Media · Design · Rastreamento</p>
   </div>
-  <div class="scroll-hint"><span>Ver mais</span><div class="scroll-arrow"></div></div>
-</section>
-
-<!-- FUNIL -->
-<section class="funnel-section">
-  <p class="section-tag">Metodologia</p>
-  <h2 class="section-title reveal">Do clique<br>à venda</h2>
-  <div class="funnel-visual">
-    <div class="frow reveal">
-      <div class="frow-left"><span class="frow-step">01</span><div><div class="frow-label">Anúncio</div><div class="frow-desc">Segmentação precisa — público certo, canal certo</div></div></div>
-      <div class="frow-right"><div class="frow-num">100%</div><div class="frow-lbl">do alcance</div></div>
-    </div>
-    <div class="frow reveal">
-      <div class="frow-left"><span class="frow-step">02</span><div><div class="frow-label">Landing Page</div><div class="frow-desc">Conversão otimizada, integrada ao CRM</div></div></div>
-      <div class="frow-right"><div class="frow-num">72%</div><div class="frow-lbl">captação</div></div>
-    </div>
-    <div class="frow reveal">
-      <div class="frow-left"><span class="frow-step">03</span><div><div class="frow-label">Rastreamento</div><div class="frow-desc">Lead rastreado por origem, canal e anúncio</div></div></div>
-      <div class="frow-right"><div class="frow-num">562</div><div class="frow-lbl">leads / mês</div></div>
-    </div>
-    <div class="frow reveal">
-      <div class="frow-left"><span class="frow-step">04</span><div><div class="frow-label">Qualificação</div><div class="frow-desc">O que avança x o que gera descarte</div></div></div>
-      <div class="frow-right"><div class="frow-num">44%</div><div class="frow-lbl">qualificados</div></div>
-    </div>
-    <div class="frow reveal">
-      <div class="frow-left"><span class="frow-step">05</span><div><div class="frow-label">Venda</div></div></div>
-      <div class="frow-right"><div class="frow-num">51</div></div>
-    </div>
+  <div class="cover-footer">
+    <div class="cover-logo">GRIGOLETTI <span class="midias">MÍDIAS</span></div>
+    <span class="cover-year">Abril de 2026</span>
   </div>
-</section>
+</div>
 
-<!-- DASHBOARD -->
-<section class="dashboard-section">
-  <p class="section-tag">Inteligência em tempo real</p>
-  <h2 class="section-title reveal">Dashboard<br>exclusivo</h2>
-  <div class="dash-wrap">
-    <!-- KPIs -->
-    <div class="dash-card reveal">
-      <div class="dash-header"><span class="dash-title">Visão geral — Abril 2026</span><span class="dash-live">Ao vivo</span></div>
-      <div class="dash-kpis">
-        <div class="dash-kpi"><div class="dash-kpi-num">562</div><div class="dash-kpi-label">Leads</div></div>
-        <div class="dash-kpi"><div class="dash-kpi-num good">R$32</div><div class="dash-kpi-label">CPL</div></div>
-        <div class="dash-kpi"><div class="dash-kpi-num">914k</div><div class="dash-kpi-label">Alcance</div></div>
-        <div class="dash-kpi"><div class="dash-kpi-num warn">1,8%</div><div class="dash-kpi-label">CTR</div></div>
-        <div class="dash-kpi"><div class="dash-kpi-num">R$22</div><div class="dash-kpi-label">CPM</div></div>
-        <div class="dash-kpi"><div class="dash-kpi-num good">51</div><div class="dash-kpi-label">Vendas</div></div>
+<!-- PARA QUEM É ESTA PROPOSTA (Cavazani) -->
+<div class="client-wrap">
+  <div class="client-inner">
+    <p class="section-label">Para quem é esta proposta</p>
+    <h2 class="section-title">Cavazani Construtora —<br>18 anos construindo futuros</h2>
+
+    <p class="client-intro">A Cavazani Construtora tem 18 anos de história construindo empreendimentos residenciais com foco em moradia digna, acessível e de alta qualidade. Com mais de 17.600 seguidores no Instagram e uma trajetória de milhares de unidades entregues, a construtora acredita que a conquista da casa própria é um portal de prosperidade — o início de muitas outras vitórias para cada família atendida.</p>
+
+    <!-- Missão / Visão / Manifesto -->
+    <div class="manifesto-strip">
+      <p class="manifesto-strip-label">Missão</p>
+      <p>Construir apartamentos econômicos com alta qualidade, comprometidos em oferecer preços justos para que clientes realizem o sonho da casa própria — suprindo vazios institucionais de moradia, saneamento, segurança e lazer.</p>
+    </div>
+    <div class="manifesto-strip" style="background:var(--stone); margin-bottom:0;">
+      <p class="manifesto-strip-label" style="color:var(--orange)">Visão</p>
+      <p style="color:var(--muted)">Ser reconhecida pelo crescimento sustentável e pela construção de moradias acessíveis, com excelência em qualidade, atendimento humanizado e compromisso social — consolidando a marca Cavazani entre as maiores construtoras de imóveis econômicos do país.</p>
+    </div>
+
+    <!-- Valores -->
+    <p class="section-label" style="margin-top:56px">Valores que guiam a Cavazani</p>
+    <div class="values-grid">
+      <div class="value-card">
+        <h4>Paixão</h4>
+        <p>Uma equipe unida e apaixonada por entregar o primeiro imóvel para cada família-cliente.</p>
+      </div>
+      <div class="value-card">
+        <h4>Encantamento</h4>
+        <p>A vivência da conquista da casa própria como uma experiência gratificante que ecoa positivamente na vida dos clientes.</p>
+      </div>
+      <div class="value-card">
+        <h4>Ética e Compromisso</h4>
+        <p>Respeito nas relações com clientes, fornecedores e parceiros — e compromisso com a entrega do prometido.</p>
+      </div>
+      <div class="value-card">
+        <h4>Diversidade</h4>
+        <p>Promoção de um mundo justo e inclusivo, refletido em cada empreendimento e comunidade atendida.</p>
+      </div>
+      <div class="value-card">
+        <h4>Empreendedorismo Social</h4>
+        <p>Preços acessíveis e contribuição social com a redução do déficit de moradia e estímulo ao lazer e saneamento.</p>
+      </div>
+      <div class="value-card">
+        <h4>Arte</h4>
+        <p>Grafites e expressões artísticas nos empreendimentos — gerando beleza, conforto e criatividade nas comunidades.</p>
+      </div>
+      <div class="value-card">
+        <h4>Oportunidades</h4>
+        <p>Uma empresa que cresce junto com sua equipe, com gestão de pessoas atenta ao aperfeiçoamento de cada membro.</p>
+      </div>
+      <div class="value-card">
+        <h4>Resultado</h4>
+        <p>Propósito e excelência gerando resultados financeiros e sociais consistentes ao longo dos 18 anos de história.</p>
       </div>
     </div>
-    <!-- Bar chart + funnel -->
-    <div class="dash-card reveal">
-      <div class="dash-header"><span class="dash-title">Leads por dia</span><span style="font-size:9px;color:rgba(255,255,255,.3);font-weight:500;">Últimos 14 dias</span></div>
-      <div style="position:relative;height:80px;margin-bottom:14px;">
-        <div class="dash-bars" style="height:100%;position:absolute;inset:0;">
-          <div class="dash-bar" style="height:42%"></div><div class="dash-bar" style="height:58%"></div>
-          <div class="dash-bar" style="height:35%"></div><div class="dash-bar" style="height:72%"></div>
-          <div class="dash-bar" style="height:50%"></div><div class="dash-bar hi" style="height:85%"></div>
-          <div class="dash-bar" style="height:68%"></div><div class="dash-bar" style="height:55%"></div>
-          <div class="dash-bar" style="height:78%"></div><div class="dash-bar" style="height:62%"></div>
-          <div class="dash-bar hi" style="height:90%"></div><div class="dash-bar" style="height:70%"></div>
-          <div class="dash-bar" style="height:65%"></div><div class="dash-bar hi" style="height:100%"></div>
-        </div>
-        <svg viewBox="0 0 280 80" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
-          <polyline points="10,52 30,44 50,58 70,36 90,50 110,26 130,38 150,46 170,30 190,40 210,22 230,34 250,38 270,18" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
-          <circle cx="270" cy="18" r="3" fill="#4ade80"/>
-        </svg>
-        <div style="position:absolute;top:4px;right:0;display:flex;align-items:center;gap:5px;">
-          <div style="width:16px;height:2px;background:#4ade80;border-radius:2px;"></div>
-          <span style="font-size:8px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#4ade80;">CPL</span>
-        </div>
+
+    <!-- Empreendimentos -->
+    <p class="section-label" style="margin-top:56px">Portfólio de Empreendimentos</p>
+    <div class="emp-grid">
+      <div class="emp-card">
+        <div class="emp-name">Urbano First</div>
+        <div class="emp-sub">Condomínio Clube by Cavazani</div>
+        <span class="emp-badge active">Lançamento</span>
       </div>
-      <div class="dash-funnel">
-        <div class="dash-funnel-row"><span class="dash-funnel-lbl">Leads</span><div class="dash-funnel-track"><div class="dash-funnel-bar" style="width:100%"></div></div><span class="dash-funnel-val">562</span></div>
-        <div class="dash-funnel-row"><span class="dash-funnel-lbl">Contato</span><div class="dash-funnel-track"><div class="dash-funnel-bar" style="width:72%"></div></div><span class="dash-funnel-val">405</span></div>
-        <div class="dash-funnel-row"><span class="dash-funnel-lbl">Qualif.</span><div class="dash-funnel-track"><div class="dash-funnel-bar" style="width:44%"></div></div><span class="dash-funnel-val">248</span></div>
-        <div class="dash-funnel-row"><span class="dash-funnel-lbl">Visita</span><div class="dash-funnel-track"><div class="dash-funnel-bar" style="width:22%"></div></div><span class="dash-funnel-val">124</span></div>
-        <div class="dash-funnel-row"><span class="dash-funnel-lbl">Venda</span><div class="dash-funnel-track"><div class="dash-funnel-bar" style="width:9%;background:#4ade80"></div></div><span class="dash-funnel-val" style="color:#4ade80">51</span></div>
+      <div class="emp-card">
+        <div class="emp-name">Rubi</div>
+        <div class="emp-sub">Condomínio Clube by Cavazani</div>
+        <span class="emp-badge active">Antecipe-se</span>
+      </div>
+      <div class="emp-card">
+        <div class="emp-name">Turmalinas</div>
+        <div class="emp-sub">Condomínio Clube by Cavazani</div>
+        <span class="emp-badge active">Obras Aceleradas</span>
+      </div>
+      <div class="emp-card">
+        <div class="emp-name">Parque das Flores</div>
+        <div class="emp-sub">Condomínio Clube</div>
+        <span class="emp-badge vendido">100% Vendido</span>
+      </div>
+      <div class="emp-card">
+        <div class="emp-name">Parque dos Pássaros</div>
+        <div class="emp-sub">Condomínio Clube</div>
+        <span class="emp-badge entregue">Entregue</span>
+      </div>
+      <div class="emp-card">
+        <div class="emp-name">Parque das Artes</div>
+        <div class="emp-sub">Condomínio Clube</div>
+        <span class="emp-badge entregue">Entregue</span>
+      </div>
+      <div class="emp-card">
+        <div class="emp-name">Sinfonia</div>
+        <div class="emp-sub">Condomínio Clube</div>
+        <span class="emp-badge entregue">Entregue</span>
+      </div>
+      <div class="emp-card">
+        <div class="emp-name">Solar das Tulipas</div>
+        <div class="emp-sub">Condomínio Clube</div>
+        <span class="emp-badge entregue">Entregue</span>
       </div>
     </div>
-    <!-- Ads table -->
-    <div class="dash-card reveal">
-      <div class="dash-header"><span class="dash-title">Performance por anúncio</span><span class="dash-live">Meta Ads</span></div>
-      <table class="ads-table">
-        <thead><tr><th>Anúncio</th><th>CTR</th><th>CPL</th><th>Leads</th><th>Vendas</th><th>Status</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><div class="ad-name"><div class="ad-dot a"></div><div><div>AD 01</div><div class="ad-sub">Público A</div></div></div></td>
-            <td class="val-good">2,4%</td><td class="val-good">R$28</td><td>187</td><td class="val-good">22</td>
-            <td><span class="badge-status badge-on">Ativo</span></td>
-          </tr>
-          <tr>
-            <td><div class="ad-name"><div class="ad-dot b"></div><div><div>AD 02</div><div class="ad-sub">Público A</div></div></div></td>
-            <td class="val-good">2,1%</td><td>R$34</td><td>142</td><td class="val-good">18</td>
-            <td><span class="badge-status badge-on">Ativo</span></td>
-          </tr>
-          <tr>
-            <td><div class="ad-name"><div class="ad-dot c"></div><div><div>AD 03</div><div class="ad-sub">Público B</div></div></div></td>
-            <td class="val-warn">1,3%</td><td class="val-warn">R$51</td><td>98</td><td>8</td>
-            <td><span class="badge-status badge-on">Ativo</span></td>
-          </tr>
-          <tr>
-            <td><div class="ad-name"><div class="ad-dot d"></div><div><div>AD 04</div><div class="ad-sub">Público B</div></div></div></td>
-            <td class="val-good">3,1%</td><td class="val-good">R$22</td><td>135</td><td>3</td>
-            <td><span class="badge-status badge-off">Pausado</span></td>
-          </tr>
-        </tbody>
-      </table>
+
+    <!-- Stats -->
+    <div class="client-stat-row">
+      <div class="client-stat">
+        <div class="client-stat-num">18 anos</div>
+        <div class="client-stat-label">De mercado imobiliário</div>
+      </div>
+      <div class="client-stat">
+        <div class="client-stat-num">+17.600</div>
+        <div class="client-stat-label">Seguidores no Instagram</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section">
+  <p class="section-label">Contexto</p>
+  <h2 class="section-title">Uma parceria orientada<br>a resultados reais.</h2>
+  <p class="section-body">
+    No mercado imobiliário, volume de leads não é suficiente. O que diferencia uma operação de alta performance é a capacidade de entender a origem de cada lead qualificado, cruzar com os resultados do CRM e otimizar campanhas com dados sólidos — não com suposições.
+  </p>
+
+  <div class="intro-grid">
+    <div class="intro-card">
+      <h3>O problema que resolvemos</h3>
+      <p>A maioria das agências entrega leads. Nós entregamos clareza: sabemos exatamente de qual canal, anúncio e audiência vêm os leads que se tornam visitas, propostas e vendas — e eliminamos o que gera descarte.</p>
+    </div>
+    <div class="intro-card">
+      <h3>Por que Grigoletti Mídias?</h3>
+      <p>Mais de 80.000 leads gerados e mais de R$283 milhões em vendas com origem online. Histórico comprovado no mercado imobiliário com metodologia própria de rastreamento e qualificação de leads.</p>
     </div>
   </div>
 </section>
+
+<div class="hairline"></div>
 
 <!-- SERVICES -->
-<section class="services">
-  <p class="section-tag">Serviços</p>
-  <h2 class="section-title reveal">O que<br>entregamos</h2>
-  <div class="svc-list">
-    <div class="svc-item reveal"><div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div><div class="svc-text"><strong>Gestão de Tráfego Pago</strong><span>Meta Ads, Google Ads e multicanal — campanhas otimizadas para gerar leads qualificados e reduzir custo por aquisição.</span></div></div>
-    <div class="svc-item reveal"><div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><div class="svc-text"><strong>Rastreamento Avançado</strong><span>Cruzamos dados de origem com resultados do CRM. Sabemos o que vende, não só o que gera clique.</span></div></div>
-    <div class="svc-item reveal"><div class="svc-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="svc-text"><strong>Landing Pages</strong><span>Criação e otimização no RD Station e WordPress, integradas ao fluxo de automação e qualificação de leads.</span></div></div>
-    <div class="svc-item reveal"><div class="svc-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><div class="svc-text"><strong>Design de Anúncios</strong><span>Criativos estáticos para campanhas pagas — peças pensadas para converter, com hierarquia visual e copy orientada à ação.</span></div></div>
+<div class="services-wrap">
+  <div class="services-inner">
+    <p class="section-label" style="color:var(--orange)">Escopo de Serviços</p>
+    <h2 class="section-title">O que está incluso<br>nesta proposta</h2>
+
+    <div class="services-grid">
+
+      <div class="svc">
+        <span class="svc-num">01</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+        <h3>Gestão de Tráfego Pago</h3>
+        <p>Criação, otimização e escala de campanhas em Meta Ads (Facebook e Instagram), Google Ads (Search, Display, Performance Max) e demais canais estratégicos conforme o perfil de cada empreendimento.</p>
+        <span class="svc-tag">Meta · Google · Multicanal</span>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">02</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <h3>Rastreamento Avançado</h3>
+        <p>Implementação e monitoramento de tracking completo, cruzando dados de origem com resultados do CRM. Identificamos quais campanhas geram leads que avançam no funil — e quais geram descarte — para otimização precisa.</p>
+        <span class="svc-tag">Analytics · Funil · CRM</span>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">03</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Gestão de Landing Pages</h3>
+        <p>Criação, publicação e otimização contínua de landing pages no RD Station e WordPress, garantindo alta taxa de conversão e integração com o fluxo de automação e qualificação de leads.</p>
+        <span class="svc-tag">RD Station · WordPress</span>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">04</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3>Gestão de Redes Sociais</h3>
+        <p>Planejamento editorial estratégico, criação de calendário de conteúdo, publicação, monitoramento e análise de performance no Instagram e Facebook do empreendimento.</p>
+        <span class="svc-tag">Instagram · Facebook</span>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">05</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+        <h3>Design de Posts</h3>
+        <p>Produção de peças gráficas para as redes sociais com identidade visual do empreendimento: stories, carrosséis e posts estáticos pensados para engajamento e conversão.</p>
+        <span class="svc-tag">Branding · Editorial · Social</span>
+      </div>
+
+      <div class="svc">
+        <span class="svc-num">06</span>
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+        <h3>Design de Anúncios</h3>
+        <p>Criação de criativos estáticos para campanhas pagas — peças pensadas para gerar cliques qualificados, com layouts, textos e hierarquias visuais voltados à conversão em cada plataforma.</p>
+        <span class="svc-tag">Meta · Google · Estático</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- NOT INCLUDED -->
+<div class="not-included">
+  <span class="ni-badge">Não incluso</span>
+  <p class="ni-text"><strong>Criação e edição de vídeos</strong> — Produção audiovisual não faz parte do escopo desta proposta.</p>
+</div>
+
+<!-- METHODOLOGY -->
+<section class="section">
+  <p class="section-label">Como Trabalhamos</p>
+  <h2 class="section-title">Metodologia orientada<br>a dados e inteligência</h2>
+  <p class="section-body">Cada decisão é tomada com base em dados reais, cruzados entre plataformas de mídia, CRM e resultados comerciais.</p>
+
+  <div class="method-steps">
+
+    <div class="mstep">
+      <div class="mstep-num">01</div>
+      <div class="mstep-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg></div>
+      <div class="mstep-content">
+        <h4>Imersão e Diagnóstico do Histórico</h4>
+        <p>Entendemos o histórico de cada empreendimento: canais utilizados, resultados anteriores, perfil do público e metas da equipe comercial. Partimos de dados reais, não de suposições.</p>
+      </div>
+    </div>
+
+    <div class="mstep">
+      <div class="mstep-num">02</div>
+      <div class="mstep-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+      <div class="mstep-content">
+        <h4>Implementação de Rastreamento e Funil</h4>
+        <p>Configuramos todos os pixels, eventos de conversão e integrações com o CRM para rastreabilidade completa do funil — do primeiro clique até a venda concretizada. Cada etapa mapeada e mensurável.</p>
+      </div>
+    </div>
+
+    <div class="mstep">
+      <div class="mstep-num">03</div>
+      <div class="mstep-icon"><svg viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></div>
+      <div class="mstep-content">
+        <h4>Ativação, Gestão e Otimização do Funil</h4>
+        <p>Campanhas ativas com revisão diária, testes de criativos, ajustes de segmentação e realocação de verba com base nos dados do funil. Monitoramos cada etapa — de lead a visita, de visita a proposta.</p>
+      </div>
+    </div>
+
+    <div class="mstep">
+      <div class="mstep-num">04</div>
+      <div class="mstep-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+      <div class="mstep-content">
+        <h4>Relatórios e Transparência Total</h4>
+        <p>Dashboard exclusivo em tempo real com métricas de Meta Ads, Google Ads e Analytics. Reunião semanal de dados e próximos passos, com análise de leads qualificados, descartes e oportunidades por origem.</p>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<div class="hairline"></div>
 
 <!-- RESULTS -->
-<section class="results">
-  <p class="section-tag">Resultados</p>
-  <h2 class="section-title reveal">Números reais,<br>não promessas</h2>
-  <div class="results-grid">
-    <div class="rcard reveal"><div class="rcard-num" data-target="100" data-prefix="+" data-suffix="k">+100k</div><div class="rcard-label">Leads gerados</div></div>
-    <div class="rcard reveal"><div class="rcard-num" data-target="10" data-prefix="+R$" data-suffix="M">+R$10M</div><div class="rcard-label">Investimento gerenciado</div></div>
-    <div class="rcard reveal"><div class="rcard-num" data-target="350" data-prefix="R$" data-suffix="M">R$350M</div><div class="rcard-label">Em vendas online</div></div>
-    <div class="rcard reveal"><div class="rcard-num" data-target="100" data-prefix="+" data-suffix="">+100</div><div class="rcard-label">Clientes atendidos</div></div>
+<div class="results-wrap">
+  <div class="results-inner">
+    <p class="section-label">Resultados Comprovados</p>
+    <h2 class="section-title">Números que falam<br>por si mesmos.</h2>
+    <p class="section-body">Histórico real de performance no mercado imobiliário, com dados de campanhas gerenciadas e vendas concretizadas.</p>
+    <div class="results-grid">
+      <div class="rcard">
+        <div class="rcard-num">+80.000</div>
+        <div class="rcard-label">Leads Gerados</div>
+      </div>
+      <div class="rcard">
+        <div class="rcard-num">+R$8M</div>
+        <div class="rcard-label">Em Investimento Gerenciado</div>
+      </div>
+      <div class="rcard">
+        <div class="rcard-num">R$283M</div>
+        <div class="rcard-label">Em Vendas com Origem Online</div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
-<!-- SUPPORT -->
-<section class="support">
-  <p class="section-tag">Como trabalhamos</p>
-  <h2 class="section-title reveal">Equipe e<br>entrega</h2>
-  <div class="support-grid">
-    <div class="support-item reveal"><div class="support-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><div class="support-text"><strong>Equipe dedicada</strong><span>Time exclusivo de segunda a sexta, em horário comercial — sem terceirização ou rotatividade.</span></div></div>
-    <div class="support-item reveal"><div class="support-ico"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div><div class="support-text"><strong>Grupo no WhatsApp</strong><span>Canal direto para comunicação ágil, dúvidas e alinhamentos rápidos sem burocracia.</span></div></div>
-    <div class="support-item reveal"><div class="support-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="support-text"><strong>Dashboard em tempo real</strong><span>Acesso 24h às métricas de Meta, Google e Analytics — transparência total sobre cada real investido.</span></div></div>
+<!-- INVESTMENT -->
+<div class="invest-wrap">
+  <p class="section-label">Investimento</p>
+  <h2 class="section-title">Valor da proposta<br>e o que você recebe.</h2>
+
+  <div class="invest-grid">
+    <div class="invest-card">
+      <p class="invest-card-label">Investimento mensal</p>
+      <div class="invest-card-value">R$8.950</div>
+      <p class="invest-card-sub">por mês · valor fixo</p>
+      <div class="invest-divider"></div>
+      <ul class="invest-includes">
+        <li>Gestão de tráfego pago (Meta + Google)</li>
+        <li>Rastreamento avançado e funil de dados</li>
+        <li>Landing pages (RD Station + WordPress)</li>
+        <li>Gestão de Instagram e Facebook</li>
+        <li>Design de posts para redes sociais</li>
+        <li>Design de anúncios estáticos</li>
+        <li>Dashboard em tempo real</li>
+        <li>Reunião semanal de dados e estratégia</li>
+      </ul>
+    </div>
+
+    <div class="invest-support">
+      <p class="support-label">Como funciona o suporte</p>
+      <p class="support-desc">Uma equipe dedicada, disponível para tirar dúvidas, alinhar estratégias e agir rápido quando necessário.</p>
+
+      <div class="support-item">
+        <div class="support-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <div class="support-text">
+          <strong>Equipe dedicada</strong>
+          <span>Time exclusivo de segunda a sexta, em horário comercial.</span>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="support-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+        <div class="support-text">
+          <strong>Grupo no WhatsApp</strong>
+          <span>Canal direto para comunicação ágil e alinhamentos rápidos.</span>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="support-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div class="support-text">
+          <strong>Reunião semanal</strong>
+          <span>Encontro fixo para análise de dados, resultados e próximas ações.</span>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="support-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="support-text">
+          <strong>Dashboard em tempo real</strong>
+          <span>Acesso 24h às métricas de Meta, Google e Analytics em painel exclusivo.</span>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
-<!-- CONTACT -->
-<section class="contact">
-  <p class="section-tag">Contato</p>
-  <h2 class="section-title reveal">Vamos<br>conversar?</h2>
-  <p class="contact-sub">Me chama no WhatsApp ou manda um e-mail. Respondo rápido e sem enrolação.</p>
-  <div class="contact-btns">
-    <a class="btn-primary" href="https://wa.me/5553991750788" target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M12.001 2C6.478 2 2 6.478 2 12.001c0 1.788.475 3.47 1.302 4.924L2 22l5.232-1.278A9.947 9.947 0 0012.001 22C17.523 22 22 17.522 22 12.001 22 6.478 17.523 2 12.001 2zm4.994 13.986c-.214.601-1.246 1.147-1.714 1.196-.424.044-.96.063-1.549-.097-.358-.1-.817-.234-1.401-.457-2.458-.961-4.059-3.405-4.184-3.563-.122-.158-.991-1.316-.991-2.509 0-1.194.625-1.782.846-2.026.222-.244.483-.304.644-.304.16 0 .322.001.464.008.148.007.348-.056.545.416.203.486.689 1.677.749 1.8.061.123.1.267.02.43-.08.162-.122.263-.241.405-.12.142-.252.317-.359.424-.12.119-.245.25-.105.49.14.242.622 1.027 1.335 1.664.917.817 1.69 1.069 1.932 1.19.242.12.383.1.524-.06.142-.162.609-.71.77-.954.162-.243.325-.202.547-.122.222.08 1.41.666 1.652.787.243.122.402.182.463.283.06.102.06.588-.154 1.189z"/></svg>
-      (53) 99175-0788 — WhatsApp
-    </a>
-    <a class="btn-secondary" href="/cdn-cgi/l/email-protection#422f23362a27373125233136232e02252f232b2e6c212d2f"><span class="__cf_email__" data-cfemail="83eee2f7ebe6f6f0e4e2f0f7e2efc3e4eee2eaefade0ecee">[email&#160;protected]</span></a>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-logo">GRIGOLETTI <span class="midias">MÍDIAS</span></div>
-  <p>Performance Digital · 2026</p>
-</footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// PROGRESS BAR
-const pgbar = document.getElementById('pgbar');
-window.addEventListener('scroll', () => {
-  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
-  pgbar.style.width = pct + '%';
-});
-
-// SCROLL REVEAL
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-// COUNTER
-function count(el) {
-  const target = +el.dataset.target;
-  const prefix = el.dataset.prefix || '';
-  const suffix = el.dataset.suffix || '';
-  let cur = 0;
-  const step = target / 60;
-  const t = setInterval(() => {
-    cur += step;
-    if (cur >= target) { cur = target; clearInterval(t); }
-    el.textContent = prefix + Math.round(cur) + suffix;
-  }, 1800 / 60);
-}
-const cobs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if(e.isIntersecting) {
-      const n = e.target.querySelector('[data-target]');
-      if(n && !n.dataset.counted){ n.dataset.counted='1'; count(n); }
-      cobs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.4 });
-document.querySelectorAll('.rcard').forEach(c => cobs.observe(c));
-
-// PARTICLES
-const canvas = document.getElementById('particles-canvas');
-if(canvas){
-  const ctx = canvas.getContext('2d');
-  let pts = [];
-  function resize(){ canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
-  resize();
-  window.addEventListener('resize', resize);
-  function Pt(){ this.x=Math.random()*canvas.width; this.y=Math.random()*canvas.height; this.vx=(Math.random()-.5)*.35; this.vy=(Math.random()-.5)*.35; this.r=Math.random()*1.5+.4; this.a=Math.random()*.35+.1; }
-  for(let i=0;i<55;i++) pts.push(new Pt());
-  function draw(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    for(let i=0;i<pts.length;i++){
-      for(let j=i+1;j<pts.length;j++){
-        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d=Math.sqrt(dx*dx+dy*dy);
-        if(d<110){ ctx.beginPath(); ctx.strokeStyle=`rgba(224,120,50,${.1*(1-d/110)})`; ctx.lineWidth=.5; ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y); ctx.stroke(); }
-      }
-    }
-    p.y,p.r,0,Math.PI*2); ctx.fillStyle=`rgba(224,120,50,${p.a})`; ctx.fill(); p.x+=p.vx; p.y+=p.vy; if(p.x<0||p.x>canvas.width)p.vx*=-1; if(p.y<0||p.y>canvas.height)p.vy*=-1; });
-    requestAnimationFrame(draw);
-  }
-  draw();
-}
-</script>
-</body>
-</html>
+<!-- CLOSING -->
+<div class="closing-wrap">
+  <div class="closing-inner">
+    <div>
+      <p class="section-label" style="color:var(--orange)">Próximos Passos</p>
+      <h2 class="section-title">Vamos conversar<br>sobre seu projeto?</h2>
+      <p class="section-body">Entre em contato para agendarmos uma reunião de alinhamento. Apresentamos nossa metodologia em detalhes e montamos a estratégia para cada empreendimento.</p>
+    </div>
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="contact-ico">
+          <svg viewBox="0 0 24 24" width="14" height="14" stroke="white" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <a href="mailto:matheusgastal@gmail.com" style="font-size:13px;font-weight:400;color:rgba(255,255,255,0.85);text-decoration:none;">matheusgastal@gmail.com</a>
+      </div>
+      <a href="https://wa.me/5553991750788" target="_blank" style="text-decoration:none;">
+        <div class="contact-item">
+          <div class="contact-ico" style="background:#25D366;flex-shrink:0;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12.001 2C6.478 2 2 6.478 2 12.001c0 1.788.475 3.47 1.302 4.924L2 22l5.232-1.278A9.947 9.947 0 0012.001 22C17.523 22 22 17.522 22 12.001 22 6.478 17.523 2 12.001 2zm4.994 13.986c-.214.601-1.246 1.147-1.714 1.196-.424.044-.96.063-1.549-.097-.358-.1-.817-.234-1.401-.457-2.458-.961-4.059-3.405-4.184-3.563-.122-.158-.991-1.316-.991-2.509 0-1.194.625-1.782.846-2.026.222-.244.483-.304.644-.304.16 0 .322.001.464.008.148.007.348-.056.545.416.203.486.689 1.677.749 1.8.061.123.1.267.02.43-.08.162-.122.263-.241.405-.12.142-.252.317-.359.424-.12.119-.245.25-.105.49.14.242.622 1.027 1.335 1.664.917.817 1.69 1.069 1.932 1.19.242.12.383.1.524-.06.142-.162.609-.71.77-.954.162-.243.325-.202.547-.122.222.08 1.41.666 1.652.787.243.122.402.182.463.283.06.102.06.588-.154 1.189z"/></svg>
+          </div>
+          <span style="font-size:13px;font-weight:400;color:rgba(255,255,255,0.85);">(53) 99175-0788 — WhatsApp</span>
+        </div>
+      </a>>
